@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva de Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logomarca do Hotel">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Formulário de Reserva de Hotel</h2>
+        <form action="/submit" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="data_chegada">Data de Chegada:</label>
+            <input type="date" id="data_chegada" name="data_chegada" required>
+            
+            <label for="numero_noites">Número de Noites:</label>
+            <input type="number" id="numero_noites" name="numero_noites" required>
+            
+            <label for="numero_hospedes">Número de Hóspedes:</label>
+            <input type="number" id="numero_hospedes" name="numero_hospedes" required>
+            
+            <label for="total_estimado">Total Estimado:</label>
+            <input type="text" id="total_estimado" name="total_estimado" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            
+            <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Desejo receber informações e ofertas
+            </label>
+            
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
